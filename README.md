@@ -1,3 +1,32 @@
+map: https://github.com/tunnima/my-docs
+
+#### also:
+https://0xdf.gitlab.io/2020/08/10/tunneling-with-chisel-and-ssf-update.html
+#### In c# lang:
+https://github.com/shantanu561993/SharpChisel
+#### and:
+http tunnel
+https://cheatsheet.haax.fr/network/pivot_techniques/
+
+# Install:
+```text
+go install github.com/jpillora/chisel@latest
+```
+execution path:
+```text
+go/bin/chisel
+```
+# Configuration:
+
+Server A.A.A.A:
+```text
+./chisel server -p 8001 --reverse
+```
+Client B.B.B.B:
+```text
+./chisel client A.A.A.A:8001 R:3124:127.0.0.1:4445
+```
+
 # Chisel
 
 [![GoDoc](https://godoc.org/github.com/jpillora/chisel?status.svg)](https://godoc.org/github.com/jpillora/chisel) [![CI](https://github.com/jpillora/chisel/workflows/CI/badge.svg)](https://github.com/jpillora/chisel/actions?workflow=CI)
